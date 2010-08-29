@@ -5,20 +5,20 @@ Make sure that the robots application is on the python path
 -----------------------------------------------------------
 
 Using virtualenvwrapper run the following in a shell:
-`add2virtualenv /path/to/directory_above_robots/`
+`add2virtualenv /path/to/directory_above_django-robots/`
 
 Using bash:
 edit the ~/.bash_profile or similar file, add to it the following line:
-`export PYTHONPATH=$PYTHONPATH:/path/to/directory_above_robots/`
+`export PYTHONPATH=$PYTHONPATH:/path/to/directory_above_django-robots/`
 
 Setup the project for the application
 -------------------------------------
 
 Add to the project's settings.py file tuple of installed apps:
-`'robots',`
+`'django-robots',`
 
 In the project's urls.py file add:
-`(r'^robots.txt$', include('robots.urls')),`
+`(r'^robots.txt$', include('django-robots.urls')),`
 
 Make sure the [sites framework](http://docs.djangoproject.com/en/dev/ref/contrib/sites/#module-django.contrib.sites) is configured and enabled (it should be by default). 
 
