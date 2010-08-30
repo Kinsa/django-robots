@@ -1,6 +1,5 @@
 from django.conf.urls.defaults import *
-from django-robots.views import robots
     
-urlpatterns = patterns('',
-    (r'^$', robots, '', 'robots'),
+urlpatterns = patterns('django.views.generic.simple',
+    (r'^$', 'direct_to_template', {'template': 'robots.txt', 'mimetype': 'text/html'}, 'robots'),
 )
