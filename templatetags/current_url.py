@@ -5,7 +5,7 @@ from django import template
 register = template.Library()
 
 @register.simple_tag
-def current_url():
+def current_site_url():
     """Returns fully qualified URL (no trailing slash) for the current site."""
     from django.contrib.sites.models import Site
     from django.conf import settings
