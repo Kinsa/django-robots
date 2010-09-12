@@ -7,7 +7,7 @@ class SimpleTest(unittest.TestCase):
     
     def test_details(self):
         # Issue a GET request.
-        response = c.get('/robots.txt')
+        response = self.client.get('/robots.txt')
         
         # Check that the response is 200 OK.
         self.failUnlessEqual(response.status_code, 200)
