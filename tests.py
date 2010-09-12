@@ -13,4 +13,4 @@ class SimpleTest(unittest.TestCase):
         self.failUnlessEqual(response.status_code, 200)
 
         # Check that the robots.txt template is being used.
-        self.assertTemplateUsed(response, 'robots.txt', msg_prefix='')
+        TestCase.assertTemplateUsed(response, 'robots.txt', msg_prefix='')
