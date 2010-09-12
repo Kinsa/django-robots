@@ -6,7 +6,7 @@ class SimpleTest(TestCase):
     def setUp(self):
         self.client = Client()
     
-    def test_details(self):
+    def test_urls(self):
         # Issue a GET request.
         response = self.client.get('/robots.txt')
         
@@ -14,4 +14,4 @@ class SimpleTest(TestCase):
         self.failUnlessEqual(response.status_code, 200)
 
         # Check that the robots.txt template is being used.
-        self.assertTemplateUsed(response, 'robots.txt', msg_prefix='')
+        self.assertTemplateUsed(response, 'robots.txt')
