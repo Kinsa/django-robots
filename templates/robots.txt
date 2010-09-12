@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: {% load current_site_url %}{% current_url %}/sitemap.xml
+Sitemap: {% load current_site_url %}{% current_site_url %}/sitemap.xml
