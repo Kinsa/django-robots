@@ -1,7 +1,8 @@
-import unittest
+#import unittest
+from django.test import TestCase
 from django.test.client import Client
 
-class SimpleTest(unittest.TestCase):
+class SimpleTest(TestCase):
     def setUp(self):
         self.client = Client()
     
@@ -13,4 +14,4 @@ class SimpleTest(unittest.TestCase):
         self.failUnlessEqual(response.status_code, 200)
 
         # Check that the robots.txt template is being used.
-        TestCase.assertTemplateUsed(response, 'robots.txt', msg_prefix='')
+        self.assertTemplateUsed(response, 'robots.txt', msg_prefix='')
