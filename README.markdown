@@ -1,6 +1,13 @@
 Installation
 ============
 
+Download into directory named robots
+------------------------------------
+
+Using virtualenvwrapper in a shell:
+`cdvirtualenv`
+`git clone git@github.com:jbergantine/django-robots.git robots`
+
 Make sure that the robots application is on the python path
 -----------------------------------------------------------
 
@@ -15,10 +22,10 @@ Setup the project for the application
 -------------------------------------
 
 Add to the project's settings.py file tuple of installed apps:
-`'django-robots',`
+`'robots',`
 
 In the project's urls.py file add:
-`(r'^robots.txt$', include('django-robots.urls')),`
+`(r'^robots.txt$', include('robots.urls')),`
 
 Make sure the [sites framework](http://docs.djangoproject.com/en/dev/ref/contrib/sites/#module-django.contrib.sites) is configured and enabled (it should be by default). 
 
