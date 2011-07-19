@@ -20,7 +20,7 @@ Add to the project's settings.py file tuple of installed apps:::
 
 In the project's urls.py file add:::
 
- url(r'^robots.txt$', include('robots.urls')),
+ url(r'^robots.txt$', include('django_robots.urls')),
 
 Make sure the `sites framework`__ is configured and enabled (it should be by default). 
 
