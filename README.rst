@@ -14,11 +14,11 @@ Installation from Source
 Setup the Project For the Application
 =====================================
 
-Add to the project's settings.py file tuple of installed apps:::
+Add to the project's settings.py file tuple of installed apps: ::
 
  'django_robots',
 
-In the project's urls.py file add:::
+In the project's urls.py file add: ::
 
  url(r'^robots.txt$', include('django_robots.urls')),
 
