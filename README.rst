@@ -11,6 +11,21 @@ Installation from Source
  $ cd django-robots
  $ python setup.py install
 
+Installation via PIP Requirements File
+======================================
+
+Include in the PIP requirements file the following line:
+
+::
+
+ -e git+git@github.com:jbergantine/django-robots.git#egg=django_robots
+
+And then install as normall (IE:)
+
+::
+
+ $ pip install -r path/to/requirements/file.txt
+
 Setup the Project For the Application
 =====================================
 
