@@ -37,7 +37,9 @@ In the project's urls.py file add: ::
 
  url(r'^robots.txt$', include('django_robots.urls')),
 
-Make sure the `sites framework`__ is configured and enabled (it should be by default). 
+Make sure the `sites framework`__ is enabled (it should be by default). 
+
+From the Django Admin, configure the Domain Name and Display Name for the site, the domain name will be used in the robots.txt file to point to the absolute URL of the site's sitemap.xml file.
 
 Configure the robots.txt Template
 =================================
