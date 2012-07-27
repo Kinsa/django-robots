@@ -18,7 +18,7 @@ Include in the PIP requirements file the following line:
 
 ::
 
- -e git+git@github.com:jbergantine/django-robots.git#egg=django_robots
+ -e git://github.com/jbergantine/django-robots.git#egg=django_robots
 
 And then install as normal (IE:)
 
