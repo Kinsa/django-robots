@@ -13,7 +13,7 @@ def current_site_url():
     from django.conf import settings
     try:
         current_site = Site.objects.get_current()
-    except DoesNotExist:
+    except Site.DoesNotExist:
         return ''
     protocol = getattr(settings, 'MY_SITE_PROTOCOL', 'http')
     port     = getattr(settings, 'MY_SITE_PORT', '')
