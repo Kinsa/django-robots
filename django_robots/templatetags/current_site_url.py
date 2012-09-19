@@ -11,7 +11,10 @@ def current_site_url():
     """Returns fully qualified URL (no trailing slash) for the current site."""
     from django.contrib.sites.models import Site
     from django.conf import settings
-    current_site = Site.objects.get_current()
+    try:
+        current_site = Site.objects.get_current()
+    except DoesNotExist:
+        return ''
     protocol = getattr(settings, 'MY_SITE_PROTOCOL', 'http')
     port     = getattr(settings, 'MY_SITE_PORT', '')
     url = '%s://%s' % (protocol, current_site.domain)
