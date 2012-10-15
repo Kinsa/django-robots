@@ -71,7 +71,7 @@ version = __import__('django_robots').__version__
 setup(
     name='django-robots',
     version=version,
-    description="Contact Form for Django",
+    description="robots.txt File Generation Django",
     long_description="""django-robots creates an application for serving a 
 robots.txt file in Django projects. See the project page for more information: 
 https://github.com/jbergantine/django-robots""",
