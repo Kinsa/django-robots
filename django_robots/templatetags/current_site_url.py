@@ -16,7 +16,7 @@ def current_site_url():
     except Site.DoesNotExist:
         return ''
     protocol = getattr(settings, 'MY_SITE_PROTOCOL', 'http')
-    port     = getattr(settings, 'MY_SITE_PORT', '')
+    port = getattr(settings, 'MY_SITE_PORT', '')
     url = '%s://%s' % (protocol, current_site.domain)
     if port:
         url += ':%s' % port
