@@ -1,6 +1,8 @@
 """Code from http://fragmentsofcode.wordpress.com/2009/02/24/django-fully-qualified-url/"""
 
 from django import template
+from django.contrib.sites.models import Site
+from django.conf import settings
 
 
 register = template.Library()
@@ -9,8 +11,6 @@ register = template.Library()
 @register.simple_tag
 def current_site_url():
     """Returns fully qualified URL (no trailing slash) for the current site."""
-    from django.contrib.sites.models import Site
-    from django.conf import settings
     try:
         current_site = Site.objects.get_current()
     except Site.DoesNotExist:
