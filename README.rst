@@ -65,4 +65,4 @@ Example usage:
 ::
  
  {% load current_site_url %}
- {{ current_site_url }}
+ {% current_site_url %}
