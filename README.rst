@@ -51,3 +51,18 @@ By default the robots.txt template only includes a directive to point to the sit
 __ http://docs.djangoproject.com/en/dev/ref/contrib/sites/#module-django.contrib.sites
 
 __ http://docs.djangoproject.com/en/dev/ref/contrib/sitemaps/
+
+Template Tags Installed
+=======================
+
+current_site_url
+````````````````
+
+Returns a full URL for the current site including custom protocol and port if set (i.e. https://example.com:8080).
+
+Example usage:
+
+::
+ 
+ {% load current_site_url %}
+ {{ current_site_url }}
