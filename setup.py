@@ -68,6 +68,10 @@ for dirpath, dirnames, filenames in os.walk(extensions_dir):
 
 version = __import__('django_robots').__version__
 
+install_requires = [
+    'Django>=1.3',
+]
+
 setup(
     name='django-robots',
     version=version,
@@ -85,6 +89,7 @@ https://github.com/jbergantine/django-robots""",
     packages=packages,
     cmdclass=cmdclasses,
     data_files=data_files,
+    install_requires = install_requires,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
