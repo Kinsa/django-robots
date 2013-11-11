@@ -39,13 +39,13 @@ In the project's urls.py file add: ::
 
 Enable the `sites framework`__:
 
-1. Add `'django.contrib.sites'` to your `INSTALLED_APPS` setting.
+1. Add ``'django.contrib.sites'`` to your `INSTALLED_APPS` setting.
 
 2. Define a SITE_ID setting: ::
 
  SITE_ID = 1
  
-3. Run syncdb.
+3. Run ``syncdb``.
 
 From the Django Admin, configure the Domain Name and Display Name for the site, the domain name will be used in the robots.txt file to point to the absolute URL of the site's sitemap.xml file.
 
