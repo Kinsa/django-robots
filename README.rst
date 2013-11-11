@@ -39,7 +39,7 @@ In the project's urls.py file add: ::
 
 Enable the `sites framework`__:
 
-1. Add 'django.contrib.sites' to your INSTALLED_APPS setting.
+1. Add `'django.contrib.sites'` to your `INSTALLED_APPS` setting.
 
 2. Define a SITE_ID setting: ::
 
