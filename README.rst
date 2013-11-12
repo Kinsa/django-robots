@@ -41,7 +41,7 @@ Enable the `sites framework`__:
 
 1. Add ``'django.contrib.sites'`` to your ``INSTALLED_APPS`` setting.
 
-2. Define a SITE_ID setting: 
+2. Define a ``SITE_ID`` setting: 
 
 ::
 
