@@ -37,7 +37,7 @@ In the project's urls.py file add: ::
 
  url(r'^robots.txt$', include('django_robots.urls')),
 
-Enable the `sites framework`__:
+Enable the `sites framework` in the project's settings.py file__:
 
 1. Add ``'django.contrib.sites'`` to your ``INSTALLED_APPS`` setting.
 
