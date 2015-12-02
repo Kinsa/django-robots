@@ -13,7 +13,7 @@ urls = [
 
 if django.VERSION < (1, 9):
     urlpatterns = patterns('',
-        [url for url in urls]
+        [url_i for url_i in urls]
     )
 else:
     urlpatterns = urls
