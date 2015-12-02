@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 setup(
     name='django-robots',
     version='1.1.0',
-    packages=find_packages(exclude=["test_project"]),
+    packages=find_packages(exclude=["tests"]),
     install_requires=['Django>=1.7'],
     author='Joe Bergantine',
     author_email='jbergantine@gmail.com',
