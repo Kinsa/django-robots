@@ -11,7 +11,6 @@ env:
   - TOX_ENV=py34-17
   - TOX_ENV=py34-18
   - TOX_ENV=py34-19
-  - TOX_ENV=py35-19
 # command to install dependencies
 install:
   - pip install tox
