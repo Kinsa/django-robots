@@ -5,7 +5,7 @@ setup(
     name='django-robots',
     version=1.0,
     packages=find_packages(exclude=["test_project"]),
-    install_requires=['Django>=1.3'],
+    install_requires=['Django>=1.6'],
     author='Joe Bergantine',
     author_email='jbergantine@gmail.com',
     description="robots.txt File Generation Django",

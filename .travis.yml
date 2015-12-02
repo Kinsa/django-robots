@@ -10,3 +10,5 @@ python:
 install: "pip install tox"
 # command to run tests
 script: tox
+# containers
+sudo: false
