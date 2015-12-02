@@ -2,6 +2,8 @@
  Django Robots
 ===============
 
+.. image:: https://travis-ci.org/jbergantine/django-robots.svg?branch=develop
+
 Installation from Source
 ========================
 
