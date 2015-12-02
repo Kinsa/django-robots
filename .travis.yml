@@ -1,14 +1,27 @@
 language: python
-python:
-  - "2.6"
-  - "2.7"
-  - "3.2"
-  - "3.3"
-  - "3.4"
-  - "3.5"
+python: 2.7
+env:
+  - TOXENV=py26-16
+  - TOXENV=py27-16
+  - TOXENV=py27-17
+  - TOXENV=py27-18
+  - TOXENV=py27-19
+  - TOXENV=py32-16
+  - TOXENV=py32-17
+  - TOXENV=py32-18
+  - TOXENV=py33-16
+  - TOXENV=py33-17
+  - TOXENV=py33-18
+  - TOXENV=py34-16
+  - TOXENV=py34-17
+  - TOXENV=py34-18
+  - TOXENV=py34-19
 # command to install dependencies
-install: "pip install tox"
+install:
+  - pip install tox
 # command to run tests
-script: tox
+script:
+  - tox
 # containers
-sudo: false
+sudo:
+  - false
