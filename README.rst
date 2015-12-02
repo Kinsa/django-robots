@@ -39,6 +39,8 @@ With TOX
 
 First, install Tox, then run the tests. This will test against the Django versions specified in the environments specified in the ``tox.ini`` file
 
+::
+
  $ pip install tox
  $ tox
 
