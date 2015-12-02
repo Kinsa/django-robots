@@ -2,6 +2,8 @@
  Django Robots
 ===============
 
+.. image:: https://travis-ci.org/jbergantine/django-robots.svg?branch=develop
+
 Installation from Source
 ========================
 
@@ -36,6 +38,8 @@ Testing
 With TOX
 
 First, install Tox, then run the tests. This will test against the Django versions specified in the environments specified in the ``tox.ini`` file
+
+::
 
  $ pip install tox
  $ tox
