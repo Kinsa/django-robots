@@ -26,6 +26,20 @@ And then install as normal (IE:)
 
  $ pip install -r path/to/requirements/file.txt
 
+Testing
+=======
+
+::
+
+ $ python setup.py test
+
+With TOX
+
+First, install Tox, then run the tests. This will test against the Django versions specified in the environments specified in the ``tox.ini`` file
+
+ $ pip install tox
+ $ tox
+
 Setup the Project For the Application
 =====================================
 
@@ -35,18 +49,18 @@ Add to the project's settings.py file tuple of installed apps: ::
 
 In the project's urls.py file add: ::
 
- url(r'^robots.txt$', include('django_robots.urls')),
+ url(r'^robots.txt', include('django_robots.urls')),
 
 Enable the `sites framework` in the project's settings.py file__:
 
 1. Add ``'django.contrib.sites'`` to your ``INSTALLED_APPS`` setting.
 
-2. Define a ``SITE_ID`` setting: 
+2. Define a ``SITE_ID`` setting:
 
 ::
 
  SITE_ID = 1
- 
+
 3. Run ``syncdb``.
 
 From the Django Admin, configure the Domain Name and Display Name for the site, the domain name will be used in the robots.txt file to point to the absolute URL of the site's sitemap.xml file.
@@ -73,6 +87,6 @@ Returns a full URL for the current site including custom protocol and port if se
 Example usage:
 
 ::
- 
+
  {% load current_site_url %}
  {% current_site_url %}
