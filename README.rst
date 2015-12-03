@@ -4,6 +4,10 @@
 
 .. image:: https://travis-ci.org/jbergantine/django-robots.svg?branch=develop
 
+`View builds on TravisCI.`__
+
+__ https://travis-ci.org/jbergantine/django-robots
+
 Installation from Source
 ========================
 
