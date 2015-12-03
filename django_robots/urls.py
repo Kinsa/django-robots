@@ -3,9 +3,6 @@ import django
 from django.conf.urls import url
 from django.views.generic import TemplateView
 
-if django.VERSION < (1, 9):
-    from django.conf.urls import patterns
-
 
 urlpatterns = [
     url(
@@ -19,6 +16,8 @@ urlpatterns = [
 ]
 
 if django.VERSION < (1, 9):
+    from django.conf.urls import patterns
+
     urlpatterns = patterns(
         '',
         url(
