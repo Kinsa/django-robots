@@ -2,18 +2,18 @@
  Django Robots
 ===============
 
-.. image:: https://travis-ci.org/jbergantine/django-robots.svg?branch=develop
+.. image:: https://travis-ci.org/bergantine/django-robots.svg?branch=develop
 
 `View builds on TravisCI.`__
 
-__ https://travis-ci.org/jbergantine/django-robots
+__ https://travis-ci.org/bergantine/django-robots
 
 Installation from Source
 ========================
 
 ::
 
- $ git clone git@github.com:jbergantine/django-robots.git
+ $ git clone git@github.com:bergantine/django-robots.git
  $ cd django-robots
  $ python setup.py install
 
@@ -24,7 +24,7 @@ Include in the PIP requirements file the following line:
 
 ::
 
- -e git://github.com/jbergantine/django-robots.git#egg=django_robots
+ -e git://github.com/bergantine/django-robots.git#egg=django_robots
 
 And then install as normal (IE:)
 
