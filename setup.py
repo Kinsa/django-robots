@@ -13,8 +13,6 @@ setup(
     version='1.1.2',
     packages=find_packages(exclude=["tests"]),
     install_requires=[
-        'Pillow>=3.1.1',
-        'sorl-thumbnail>=3.2.5',
         'Django>=1.11'
     ],
     author='Joe Bergantine',
