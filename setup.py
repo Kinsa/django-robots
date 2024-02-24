@@ -15,12 +15,12 @@ setup(
     install_requires=[
         'Django>=1.11'
     ],
-    author='Joe Bergantine',
-    author_email='joe@kinsa.us',
+    author='Kinsa Creative Incorporated',
+    author_email='enquiries@kinsa.cc',
     description=description,
     long_description=long_description,
-    url='https://github.com/bergantine/django-robots',
-    download_url='https://github.com/bergantine/django-robots/tarball/1.1.3',
+    url='https://github.com/Kinsa/django-robots',
+    download_url='https://github.com/Kinsa/django-robots/tarball/1.1.3',
     license='New BSD License',
     platforms=['any'],
     classifiers=[
